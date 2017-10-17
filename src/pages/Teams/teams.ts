@@ -9,9 +9,15 @@ import {TeamDetailPage} from '../TeamDetail/teamDetail'
 })
 
 export class TeamsPage {
+  teams = [
+    {id: 1, name: 'HC Elite'},
+    {id: 2, name: 'Team Takeover'},
+    {id: 3, name: 'DC Thunder'}
+  ]
+
   constructor (private nav: NavController) {}
 
-  itemTapped () {
-    this.nav.push(TeamDetailPage)
+  itemTapped ($event, team) {
+    this.nav.push(TeamDetailPage, team)
   }
 }
