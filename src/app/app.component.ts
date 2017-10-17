@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import {MyTeamsPage} from '../pages/MyTeams/myTeams'
 import {TournamentsPage} from '../pages/Tournaments/tournaments'
+import {TeamsPage} from '../pages/Teams/teams'
 
 @Component({
   templateUrl: 'app.html'
