@@ -11,6 +11,5 @@ export class TeamDetailPage {
 
   constructor (private nav: NavController, private navParams: NavParams) {
     this.team = this.navParams.data
-    console.log(this.navParams)
   }
 }

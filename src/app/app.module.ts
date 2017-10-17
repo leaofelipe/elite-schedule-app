@@ -7,6 +7,8 @@ import {MyTeamsPage} from '../pages/MyTeams/myTeams'
 import {TournamentsPage} from '../pages/Tournaments/tournaments'
 import {TeamsPage} from '../pages/Teams/teams'
 import {TeamDetailPage} from '../pages/TeamDetail/teamDetail'
+import {StandingsPage} from '../pages/Standings/standings'
+import {TeamHomePage} from '../pages/TeamHome/teamHome'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +19,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyTeamsPage,
     TournamentsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    StandingsPage,
+    TeamHomePage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyTeamsPage,
     TournamentsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    StandingsPage,
+    TeamHomePage
   ],
   providers: [
     StatusBar,
