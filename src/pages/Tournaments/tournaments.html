@@ -6,13 +6,8 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item (click)="itemTapped()">
-      March Madness Tournament
+    <button ion-item (click)="itemTapped($event, tournament)" *ngFor="let tournament of tournaments">
+      {{tournament.name}}
     </button>
-
-    <button ion-item (click)="itemTapped()">
-      Summer Showdown
-    </button>
-
   </ion-list>
 </ion-content>

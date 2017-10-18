@@ -7,25 +7,23 @@ import {MyTeamsPage} from '../pages/MyTeams/myTeams'
 import {TournamentsPage} from '../pages/Tournaments/tournaments'
 import {TeamsPage} from '../pages/Teams/teams'
 import {TeamHomePage} from '../pages/TeamHome/teamHome'
+import { EliteApi } from './shared/elite-api.service'
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [
+    EliteApi
+  ]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-
   rootPage: any = MyTeamsPage;
-
-  /* pages: Array<{title: string, component: any}>; */
-
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
