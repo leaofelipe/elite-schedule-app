@@ -48,6 +48,7 @@ export class TeamDetailPage {
         }
       })
       .value()
+      console.log(this.games)
   }
 
   getScoreDisplay(isTeam1, team1Score, team2Score) {
@@ -64,5 +65,9 @@ export class TeamDetailPage {
   gameClicked($event, game) {
     let sourceGame = this.tourneyData.games.find(g => g.id === game.gameId)
     this.nav.parent.parent.push(GamePage, sourceGame)
+  }
+
+  dateChanged() {
+    console.log('Changed.')
   }
 }
